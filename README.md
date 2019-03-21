@@ -2,20 +2,67 @@
 
 # Food Fairy
 
-### PURPOSE
+## Final Product
 
-An application that connects hungry customers to new culinary experiences based off of their geolocation.
+## PURPOSE
 
-Customers can search for hole-in-the-wall restaurants within their proximity and complete a taste quiz to find recommended dishes from a chosen restaurant. Once a quiz is completed, the customer will be rewarded with an exclusive perk specific to said restaurant.
+Food Fairy aims to connect local restaurants with new customers by enhancing the culinary experience of its customers on its platform. Here, customers are incentivized to go outside their comfort zone to try new restaurants and dishes.
+
+Customers can browse through restaurants within their proximity from a map and complete a preference quiz provided by the restaurant. Upon completion of a quiz, Customers can find recommended dishes from the chosen restaurant. Furthermore, the customer will be rewarded with an exclusive perk specific to said restaurant. For instance, the reward can be $5.00 off first order. 
 
 Restaurants can create and customize fun quizzes which offer an incentive to new customers to try out their feature dishes.
 
 
-### TARGET AUDIENCE
+## TARGET AUDIENCE
+Restaurants:
+- Mom and pop shops in areas with little foot traffic
+- Adventurous diners
 
-Mom and pop shops in areas with little foot traffic, adventurous diners
+Customers:
+- Individuals seeking for new culinary experiences outside of their comfort zone.
 
-### TEAM MEMBERS
+## Dependencies
+
+- react
+- react-dom
+- rails 5.1
+- axios
+- bootstrap
+- google-maps-react
+- react-router-dom
+- react-hot-loader
+* [babel-loader](https://github.com/babel/babel-loader)
+
+
+## Getting Started
+
+First, clone the repo to your local machine
+
+
+```
+1st Server: Restaurant Side
+- Go into `frontend` directory (using `cd frontend` command from the `heist` directory)
+- Install all dependencies (using `npm install` command).
+- Run the development web server using the `npm start` command.
+- open http://localhost:5000 
+
+2nd Server: Customer Side
+- Go into `frontend_customer` directory (using `cd frontend_customer` command from the `heist` directory)
+- Install all dependencies (using `npm install` command).
+- Run the development web server using the `npm start` command. 
+- open http://localhost:3001
+
+3rd Server: Backend
+- Go into `backend` directory (using `cd backend` command from the `heist` directory)
+- Install all dependencies (using `bundle install` command).
+- Run the development web server using the `bin/rails s -b 0.0.0.0` command. 
+- open http://localhost:3000
+
+```
+
+
+
+## TEAM MEMBERS
 
 [Gagan Lal](https://github.com/gaganlal)
 [Anisa Tahlil](https://github.com/anisa114)

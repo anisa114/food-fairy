@@ -1,21 +1,28 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import axios from 'axios'; 
-import Login from  './login.js';
-import Quiz from './quiz.js'
+import { BrowserRouter as Router, Route } from "react-router-dom"
+import { Switch } from 'react-router'
+import background from "./images/backdrop.jpg";
+import Dishes from './Dishes.js'
+import QuizWrapper from './QuizWrapper.js'
+
+
 
 class App extends Component {
+
   render() {
     return (
-      <div>
-        hhh
-        <Login />
-        <Quiz />
-       <h1> hhhhh </h1> Hi my firends whats up whrfhfhdfsdfhsd
+      <div style={{ height:'100vh', backgroundImage:"url("+background+")", backgroundSize: 'cover', fontFamily:'Noto Sans TC' }}>
+        <Router>
+            <Switch>
+              <Route path="/restaurants/dishes" component={Dishes} />  
+              <Route path="/restaurants/quizzes" component={QuizWrapper} />  
+            </Switch>
+        </Router>
       </div>
     );
   }
 }
 
 export default App;
+

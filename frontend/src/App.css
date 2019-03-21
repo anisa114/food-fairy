@@ -31,3 +31,11 @@
     transform: rotate(360deg);
   }
 }
+
+.question1 {
+  color: blue
+}
+
+input, textarea {
+  width: 350px;
+}

@@ -1,0 +1,68 @@
+#mainheader {
+  margin: auto;
+  text-align: center;
+  color:black;
+  font-family: 'Satisfy', cursive;
+
+}
+
+#dishname {
+  margin: auto;
+  text-align: center;
+  color:black;
+}
+
+#reward {
+  text-align: center;
+  color: white;
+  background-color: #3d100d;
+  border-radius: 15px;
+}
+
+#image {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  border: 2px solid darkred; /* Gray border */
+  border-radius: 4px;  /* Rounded border */
+  padding: 5px; /* Some padding */
+  /* width: 50%; */
+}
+
+
+
+
+
+#card{
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+  border-radius: 25px;
+  padding: .75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: rgb(186, 187, 183);
+  border-bottom: 1px solid rgba(0,0,0,.125);
+
+  &:first-child {
+    @include border-radius($card-inner-border-radius $card-inner-border-radius 0 0);
+  }
+
+  + .list-group {
+    .list-group-item:first-child {
+      border-top: 0;
+    }
+  }
+}
+
+.card-footer {
+  padding: $card-spacer-y $card-spacer-x;
+  background-color: $card-cap-bg;
+  border-top: $card-border-width solid $card-border-color;
+
+  &:last-child {
+    @include border-radius(0 0 $card-inner-border-radius $card-inner-border-radius);
+  }
+}
+
